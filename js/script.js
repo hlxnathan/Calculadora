@@ -4,16 +4,6 @@ const insert = (num) => {
     document.getElementById("resultado").innerHTML = numero + num;
 }
 
-const maxCaracteres = 11;
-const divResultado = document.getElementById("resultado");
-divResultado.addEventListener("input", () => {
-    let conteudo = divResultado.innerText;
-    if (conteudo.length > maxCaracteres) {
-        console.log("Error");
-        divResultado.innerText = conteudo.slice(0, maxCaracteres);
-    }
-});
-
 //FUNÇÃO QUE LIMPA TUDO DO VISOR
 const clean = () => {
     document.getElementById("resultado").innerHTML = '';
