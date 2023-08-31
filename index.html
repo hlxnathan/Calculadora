@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static.wixstatic.com/media/57b3f0_a9d95fd503f848eaa5a1c4aee67f50c4%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/57b3f0_a9d95fd503f848eaa5a1c4aee67f50c4%7Emv2.png" type="image/png">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Calculadora - StackX Lab</title>
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>CALCULADORA</h1>
+            <div id="resultado" contenteditable="true"></div>
+            <table>
+                <tr>
+                    <td colspan="2"><button class="botaoclean" style="width: 105px;" onclick="clean()">AC</button></td>
+                    <td><button class="botaoclean" onclick="back()"><</button></td>
+                    <td><button class="botaooperacao" onclick="insert('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botaooperacao" onclick="insert('*')">×</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botaooperacao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td><button class="botaooperacao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" onclick="insert('0')" style="width: 105px;">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                    <td><button class="botaooperacao" onclick="calcular()">=</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="history"> <!--INÍCIO DIV HISTÓRICO--> 
+            <h1>HISTÓRICO</h1>
+            <br>
+            <table>
+                <tr class="line">
+                    <td>DATA E HORA</td>
+                    <td>CONTA</td>
+                </tr>
+                <tr class="line">
+                    <td>
+                        <input class="input-tabela" type="text" id="data-1" disabled/>
+                    </td>
+                    <td>
+                        <input class="input-tabela" type="text" id="calculo-1" disabled/>
+                    </td>
+                </tr>
+                <tr class="line">
+                    <td>
+                        <input class="input-tabela" type="text" id="data-2" disabled/>
+                    </td>
+                    <td>
+                        <input class="input-tabela" type="text" id="calculo-2" disabled/>
+                    </td>
+                </tr>
+                <tr class="line">
+                    <td>
+                        <input class="input-tabela" type="text" id="data-3" disabled/>
+                    </td>
+                    <td>
+                        <input class="input-tabela" type="text" id="calculo-3" disabled/>
+                    </td>
+                </tr>
+                <tr class="line">
+                    <td>
+                        <input class="input-tabela" type="text" id="data-4" disabled/>
+                    </td>
+                    <td>
+                        <input class="input-tabela" type="text" id="calculo-4" disabled/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="js/script.js"></script>
+</html>

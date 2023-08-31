@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    padding: 6px;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #000,rgb(53, 53, 54));
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}   
+
+.calculadora {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+    border-radius: 22px;
+    padding: 18px;
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(234, 86, 13);
+    border: none;
+    color: #fff;
+    border-radius: 13px;
+    margin: 4px;
+}
+
+.botaoclean {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    margin: 3px;
+}
+
+.botaooperacao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #8F43EE;
+    border: none;
+    color: white;
+    border-radius: 13px;
+    margin: 3px;
+}
+
+.botao:hover, .botaooperacao:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+#resultado {
+    width: 207px;
+    height: 30px;
+    margin: 7px;
+    font-size: 28px;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding: 11px;
+    border-radius: 13px;
+}
+
+/************* TABELA HISTÓRICO **************/
+.history {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    margin-top: 8px;
+    font-weight: 700;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    border-radius: 22px;
+    padding: 18px;
+}
+
+.line {
+    width: auto;
+    height: auto;
+
+}
+
+.input-tabela {
+    font-size: 15px;
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    border-radius: 13px;
+    padding: 10px;
+    margin: 3px;
+}
